@@ -24,3 +24,7 @@ sudo VBoxManage list -l systemproperties
 ```bash
 sudo VBoxManage setproperty machinefolder /home/xxx/vbox_default_folder
 ```
+* Disable VT-x:
+```bash
+sudo VBoxManage modifyvm  hipchat_v_2.0 --hwvirtex off
+```
