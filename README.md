@@ -8,7 +8,19 @@ sudo VBoxManage import -vsys 0 --unit 12 --disk /home/xxx/vbox_hipchat_mount/cha
 ```bash
 sudo vboxmanage list -l vms
 ```
+* List running vms:
+```bash
+sudo VBoxManage list runningvms
+```
 * Delete a vm and the corresponding files / folders:
 ```bash
 sudo vboxmanage unregistervm VM_NAME --delete
+```
+* List system properties:
+```bash
+sudo VBoxManage list -l systemproperties
+```
+* Change default machine folder:
+```bash
+sudo VBoxManage setproperty machinefolder /home/xxx/vbox_default_folder
 ```
